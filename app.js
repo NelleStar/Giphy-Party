@@ -13,7 +13,7 @@ const $gifContainer = $("#gif-container");
 $($submitButton).on('click', async function () {
     const $userSearchTerm = $("#giphy-search").val();
     const response = await axios.get(
-    `http://api.giphy.com/v1/gifs/search?q=${$userSearchTerm}&api_key=xc5DcZjkGcLhHdkAt3RCNbPYT584s7Vl`
+    `https://api.giphy.com/v1/gifs/search?q=${$userSearchTerm}&api_key=xc5DcZjkGcLhHdkAt3RCNbPYT584s7Vl`
     );
     const randomIndex = Math.floor(Math.random() * response.data.data.length)
     const randomGif = response.data.data[randomIndex];
