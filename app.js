@@ -1,5 +1,5 @@
 //giphy URL made into variable for easier use
-const giphyURL = 'http://api.giphy.com/v1/gifs/search'
+const giphyURL = 'https://api.giphy.com/v1/gifs/search'
 
 
 // selecting elements and setting them to variables for easier use
